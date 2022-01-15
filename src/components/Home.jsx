@@ -28,11 +28,11 @@ const Home = () => {
 
     if (byRating) {
       sortedProducts = sortedProducts.filter(
-        (prod) => prod.ratings == byRating
+        (prod) => prod.ratings === byRating
       );
     }
 
-    console.log(byRating);
+    // console.log(byRating);
 
     if (searchQuery) {
       sortedProducts = sortedProducts.filter((prod) =>
